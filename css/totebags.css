@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: #fef7e0;
+}
+
+nav{
+    background-color: #c7714b;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    padding-top: 1%;
+}
+
+a{
+    color:#fef7e0
+    text-decoration none;
+    font-family: "Inconsolata", system-ui;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main{
+    display: grid;
+    background-color: #fef7e0;
+}
+
+h1{
+    color: #fef7e0;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    text-decoration: none;
+    background-color: #c7714b;
+}
+
+#subtitulo1{
+    color: #c7714b;
+    background-color: #f0d474;
+    font-size: 14px;
+    font-family: "Inconsolata", system-ui;
+    text-decoration: none;
+}
+#subtitulo2{
+    color: #c7714b;
+    background-color: #f0d474;
+    font-size: 14px;
+    font-family: "Inconsolata", system-ui;
+    text-decoration: none;
+}
+#subtitulo3{
+    color: #c7714b;
+    background-color: #f0d474;
+    font-size: 14px;
+    font-family: "Inconsolata", system-ui;
+    text-decoration: none;
+}
+#subtitulo4{
+    color: #c7714b;
+    background-color: #f0d474;
+    font-size: 14px;
+    font-family: "Inconsolata", system-ui;
+    text-decoration: none;
+}
+#subtitulo5{
+    color: #c7714b;
+    background-color: #f0d474;
+    font-size: 14px;
+    font-family: "Inconsolata", system-ui;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #c7714b;
+}
+
+#PiedePágina{
+    color: #fef7e0;
+    font-family: "Inconsolata", system-ui;
+    font-size: 15px;
+    font-weight: 150;
+    text-decoration: none;
+    background-color: #c7714b;
+}
+
+@media only screen and (max-width:600px) {
+
+    header{
+        height: 500px;
+    }
+
+    nav{
+        height: 200px;
+    }
+
+    main{
+        height: 2000px;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    ul{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    a{
+        font-size: 25px;
+    }
+
+    #grilla{
+        grid-template-columns: 44% 44%;
+        grid-template-rows: 495px 495px 495px;
+        grid-template-areas: "titulo tote bags" "tote bag sol"
+                             "tote bag almendra" "tote bag cerati"
+                             "tote bag matisse" "tote bag gato azul";
+        align-content: space-around;
+        justify-content: center;      
+        column-gap: 2%;      
+        row-gap: 15px;        
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    header{
+        height: 300px;
+    }
+
+    ul{
+        height: 80px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li{
+        width: 15%;
+        text-align: center;
+    }
+
+    a{
+        font-size: 30px;
+    }
+
+    #grilla{
+        height: 1600px;
+        grid-template-columns: 44% 44%;
+        grid-template-rows: 545px 495px 545px;
+        grid-template-areas: "titulo tote bags" "tote bag sol"
+                             "tote bag almendra" "tote bag cerati"
+                             "tote bag matisse" "tote bag gato azul";
+        justify-content: space-evenly;
+        align-content: space-around;
+        column-gap: 2%;
+        row-gap: 15px;
+                            
+    }
+
+}
+
+@media only screen and ( min-width: 992px ){
+
+    header{
+        height: 200px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    main{
+        height: 2000px;
+    }
+
+    footer{
+        height: 50px;
+    }
+
+    ul{
+        height: 60px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li{
+        width: 15%;
+        text-align: center;
+    }
+
+    a{
+        font-size: 35px;
+    }
+
+    #grilla{
+        height: 1800px;
+        grid-template-columns: 20% 24% 20% 24%;
+        grid-template-rows: 895px 895px ;
+        grid-template-areas: "titulo tote bags" "tote bag almendra" "tote bag matisse"
+                             "tote bag sol" "tote bag cerati" "tote bag gato azul";
+        justify-content: space-evenly;
+        align-content: space-around;   
+        column-gap: 2%;     
+        row-gap: 10px;           
+    }
+
+}
